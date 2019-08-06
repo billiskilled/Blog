@@ -7,11 +7,12 @@ public class Dao {
     public static Connection getConnection(){
 
         Connection conn = null;
-        String url = "jdbc:mysql://127.0.0.1:3306/practice?characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong";
+        // String url = "jdbc:mysql://127.0.0.1:3306/practice?characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong";
+        String url = "jdbc:mysql://49.232.56.194:3306/practice?characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong";
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection(url,"root","112358");
+            conn = DriverManager.getConnection(url,"root","024812");
         }
         catch(ClassNotFoundException e)
         {
