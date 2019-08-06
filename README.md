@@ -9,9 +9,9 @@
 > 使用Dockerfile来构建
 
 1. 切换到项目目录
-2. mvn package
-3. mv target/blog.war docker_file/tomcat
-3. 执行shell/docker_tomcat.sh
+2. 本地机器：mvn package
+3. scp target/blog.war ubuntu@49.232.56.194:~/github/blog/docker_file/tomcat
+4. 执行shell/docker_tomcat.sh
 
 ### mysql
 
